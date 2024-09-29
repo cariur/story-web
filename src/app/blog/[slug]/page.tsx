@@ -16,7 +16,7 @@ export async function generateMetadata({
   const result = await wisp.getPost(slug);
   if (!result || !result.post) {
     return {
-      title: "Blog post not found",
+      title: "Story post not found",
     };
   }
 
