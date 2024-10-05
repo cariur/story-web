@@ -43,7 +43,7 @@ const TipPage = () => {
   });
   // kasimytcreation@okhdfcbank
   const onSubmit = (values) => {
-    const upiId = "salman.khan23@ybl";
+    const upiId = "kasimytcreation@okhdfcbank";
     const combinedMessage = `From: ${values.senderName}, Message: ${values.senderMessage}`;
 
     const link = `upi://pay?pa=${encodeURIComponent(
@@ -52,9 +52,7 @@ const TipPage = () => {
       values.amount
     )}&tn=${encodeURIComponent(
       combinedMessage
-    )}&cu=INR&url=${encodeURIComponent(
-      "https://stories-by-kasim.vercel.app/thankyou"
-    )}`;
+    )}`
 
     setUpiLink(link);
     setIsFormVisible(false); // Hide the form when the QR code is generated
