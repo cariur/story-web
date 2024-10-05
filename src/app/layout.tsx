@@ -7,7 +7,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import FloatingButton from "@/components/FloatingButton";
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: {
     absolute: config.blog.metadata.title.absolute,
@@ -39,6 +39,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
