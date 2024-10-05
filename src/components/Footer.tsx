@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FunctionComponent } from "react";
 import { DarkModeToggle } from "./DarkModeToggle";
 import { Button } from "./ui/button";
+import FloatingButton from "./FloatingButton";
 
 export const Footer: FunctionComponent = () => {
   return (
@@ -18,6 +19,7 @@ export const Footer: FunctionComponent = () => {
           </Link>
           <DarkModeToggle />
         </div>
+        <FloatingButton />
       </div>
     </section>
   );
